@@ -19,5 +19,3 @@ const Character = mongoose.model('character', characterSchema);
 
 
 module.exports = Character;
-
-//house: [{type: Schema.Types.ObjectId, ref:"house"}], 

@@ -6,8 +6,6 @@ const { upload, uploadToCloudinary  } = require('../../middlewares/file.middlewa
 const router = express.Router();
 
 router.get('/', getHouses);
-// router.get('/:id', getOneSimpsons);
-// router.get('/apellido/:surname', getSimpsonsBySurname);
 router.post('/', [isAuth], upload.single('picture'), uploadToCloudinary, postHouses);
 router.put('/:id', putHouses);
 router.delete('/:id', deleteHouses);

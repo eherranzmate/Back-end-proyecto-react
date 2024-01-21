@@ -10,18 +10,6 @@ const getCharacters = async (req, res) => {
     }
 }
 
-
-// const getOneCiudad = async (req, res) => {
-//     try {
-//         const {id} =req.params;
-//         const oneCiudad = await Ciudad.findById(id).populate('ciudadanos');
-//         return res.status(200).json(oneCiudad);
-//     } catch (error) {
-//         return res.status(500).json(error)
-//     }
-// }
-
-
 const postCharacters = async (req, res) => {
     try {
         const movieCharacter= req.file ? req.file_url : null;

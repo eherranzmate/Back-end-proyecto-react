@@ -10,27 +10,6 @@ const getHouses = async(req, res) => {
     }
 }
 
-// const getOneHouse = async(req, res) => {
-//     try {
-//         const {id} = req.params;
-
-//         const getOneHouse = await House.findById(id).populate('ciudad');
-//         return res.status(200).json(oneHouse);
-//     } catch (error) {
-//         return res.status(500).json(error) 
-//     }
-// }
-
-// const getSimpsonsBySurname = async(req, res) => {
-//     try {
-//         const {surname} = req.params;
-
-//         const oneSimpson = await Simpson.find({apellido: surname});
-//         return res.status(200).json(oneSimpson);
-//     } catch (error) {
-//         return res.status(500).json(error) 
-//     }
-// }
 
 const postHouses = async(req, res) => {
     try {

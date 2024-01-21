@@ -6,7 +6,6 @@ const { upload, uploadToCloudinary  } = require('../../middlewares/file.middlewa
 
 
 characterRoutes.get('/', getCharacters);
-//characterRoutes.get('/:id', getOneCiudad);
 characterRoutes.post('/', upload.single('picture'), uploadToCloudinary, postCharacters);
 
 module.exports  = characterRoutes;
